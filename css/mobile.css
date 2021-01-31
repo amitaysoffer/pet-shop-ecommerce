@@ -176,7 +176,7 @@
   .top-footer__column:nth-child(2) {
     grid-column-start: 2;
     position: relative;
-    right: 40px;
+    right: 80px;
   }
 
   .top-footer__info {
@@ -192,7 +192,11 @@
   }
 
   .top-footer__social {
-    margin-top: 10px;
+    margin-top: 25px;
+  }
+
+  .top-footer__social img {
+    width: 15px !important;
   }
 
   .top-footer__signup {
@@ -202,14 +206,10 @@
   .top-footer:after {
     content: '';
     width: 100%;
-    /* text-align: center; */
-    /* margin: auto; */
     height: 100px;
     right: 80px;
     position: absolute;
-    /* align-self: center; */
     margin-top: 165px;
-    /* margin: auto; */
     border-bottom: #efefef 2px solid;
   }
 
