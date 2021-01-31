@@ -47,7 +47,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #b6e3fc;
+  background: linear-gradient(45deg, #81e4f2, #81e4f3);
   border-radius: 0 0 50% 50%/0 0 100% 100%;
   transform: scaleX(3);
 }
@@ -170,7 +170,7 @@ nav li a:hover {
 
 .product__price {
   margin-top: 10px;
-  color: #db6435;
+  color: #ff5c00;
   font-weight: 700;
 }
 
@@ -185,7 +185,7 @@ nav li a:hover {
   letter-spacing: 1px;
   width: 70%;
   align-self: center;
-  background: #db6435;
+  background: #ff5c00;
   cursor: pointer;
   padding: 10px;
   border: none;
@@ -239,7 +239,7 @@ nav li a:hover {
   content: '';
   width: 259px;
   height: 250px;
-  background-color: #b6e3fc;
+  background: linear-gradient(45deg, #81e4f2, #81e4f3);
   display: block;
   border-radius: 50%;
   position: relative;
@@ -376,7 +376,7 @@ nav li a:hover {
 
 .top-footer__signup p {
   font-size: 15px;
-  color: #db6435;
+  color: #ff5c00;
 }
 
 .top-footer__social {
