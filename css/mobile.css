@@ -75,4 +75,48 @@
   .arrows {
     display: none;
   }
+
+  /*--> ABOUT <--*/
+  .about {
+    flex-direction: column;
+    margin-top: 130px;
+    padding: 0;
+  }
+
+  .about__content {
+    padding: 25px;
+    text-align: center;
+    margin-top: 40px;
+    width: 90%;
+  }
+
+  .about__content button {
+    margin: auto;
+    width: 55%;
+    padding: 13px;
+  }
+
+  .about__content p {
+    font-size: 12px;
+  }
+
+  .about__content h1 {
+    margin: auto;
+  }
+
+  .about__img img {
+    width: 61%;
+  }
+
+  .about__img .blob {
+    bottom: 99px;
+    left: 32px;
+  }
+
+  .about__img:after {
+    top: 38px;
+    right: 69px;
+    width: 248px;
+    height: 220px;
+  }
 }
