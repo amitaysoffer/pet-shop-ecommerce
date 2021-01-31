@@ -119,4 +119,27 @@
     width: 248px;
     height: 220px;
   }
+
+  /*--> JUMBOTRON <--*/
+  .jumbotron {
+    height: 315px;
+    margin-top: 70px;
+  }
+
+  .jumbotron__content {
+    width: 50%;
+  }
+
+  .jumbotron__logo {
+    width: 1.3em;
+  }
+
+  .jumbotron__content h1 {
+    margin: 14px;
+    font-size: 21px;
+  }
+
+  .jumbotron__content p {
+    font-size: 11px;
+  }
 }
