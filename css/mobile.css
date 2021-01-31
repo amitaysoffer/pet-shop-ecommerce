@@ -1,7 +1,4 @@
 @media only screen and (max-width: 500px) {
-  body {
-    /* position: fixed; */
-  }
   /*--> HERO <--*/
   .navbar {
     height: 100%;
@@ -231,5 +228,53 @@
     justify-content: space-around;
     width: 80%;
     align-items: center;
+  }
+
+  /*--> MODAL <--*/
+  .modal-container {
+    width: 85%;
+    height: 500px;
+    grid-template-columns: unset;
+    grid-template-rows: 1fr 2fr;
+    border-radius: 15px;
+  }
+
+  .modal__left {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .modal__left img {
+    height: 160px;
+  }
+
+  .modal__right {
+    justify-content: flex-start;
+  }
+
+  .modal__right h3 {
+    margin-top: 25px;
+    font-size: 20px;
+  }
+
+  .modal__right input {
+    padding: 15px 25px;
+    background: #cbe8f8;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    outline: none;
+    width: 80%;
+  }
+
+  .modal__right button {
+    padding: 15px;
+    width: 50%;
+  }
+
+  .modal__right p {
+    font-size: 12px;
+    width: 70%;
+    margin: auto;
   }
 }
