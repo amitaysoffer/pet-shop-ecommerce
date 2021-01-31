@@ -1,0 +1,21 @@
+.btn {
+  color: #fff;
+  font-size: 10px;
+  margin: 10px auto;
+  letter-spacing: 1px;
+  width: 40%;
+  align-self: center;
+  background: #db6435;
+  cursor: pointer;
+  padding: 11px;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.flex-center {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}

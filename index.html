@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/css/modal.css" />
+    <title>Bark Pet Shop</title>
+  </head>
+  <body id="home">
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="navbar">
+        <h1 class="navbar__logo">
+          B<img src="/images/icons/shape-paw.svg" alt="paw" />RK
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#">Active</a></li>
+            <li><a href="#">Link one</a></li>
+            <li><a href="#">Link two</a></li>
+            <li><a href="#">Link three</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content-container">
+        <img src="/images/png/dog-hero@2x.png" alt="hero-dog" />
+        <div class="content">
+          <h3>Vestibulum Fusce Aenean Dolor</h3>
+          <button class="btn" id="myBtn">sign up</button>
+        </div>
+      </div>
+
+      <!-- Modal Popup -->
+      <div id="myModal" class="modal">
+        <div class="modal-container">
+          <span class="close">&times;</span>
+          <div class="modal__left">
+            <img src="/images/png/dog-popup@2x.png" alt="dog-popup" />
+          </div>
+          <div class="modal__right">
+            <h3>Newsletter Sign Up</h3>
+            <form action="">
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Email Address" />
+              <p>Donec id elit non mi parta gravida at eget metus.</p>
+              <button class="btn">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Products Section -->
+    <section class="products">
+      <div class="products__title">
+        <h3>
+          <img
+            class="products__logo"
+            src="/images/icons/shape-paw.svg"
+            alt="shape-paw"
+          />Our Best Sellers
+        </h3>
+      </div>
+      <div class="products__body flex-center">
+        <div class="arrows flex-center">
+          <img
+            class="right-arrow arrow"
+            src="/images/icons/chevron-next.svg"
+            alt="right arrow"
+          />
+          <img
+            class="left-arrow arrow"
+            src="/images/icons/chevron-prev.svg"
+            alt="left arrow"
+          />
+        </div>
+        <div class="products-list flex-center">
+          <div class="product">
+            <img src="/images/png/product1@2x.png" alt="product1" />
+            <p class="product__description">
+              Natures Menu Dog Food Can Chicken
+            </p>
+            <p class="product__price">£22.81</p>
+          </div>
+          <div class="product middle-product">
+            <img src="/images/png/product2@2x.png" alt="product2" />
+            <p class="product__description">
+              Natures Menu Senior Dog Food Pouch Lamb with Chicken
+            </p>
+            <p class="product__price">£11.92</p>
+            <button class="btn">View More</button>
+          </div>
+          <div class="product">
+            <img src="/images/png/product3@2x.png" alt="product3" />
+            <p class="product__description">Real Meaty Dog Treats with Beef</p>
+            <p class="product__price">£2.09</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="about">
+      <div class="about__img flex-center">
+        <img src="/images/png/dog.png" alt="dog" />
+        <img class="blob" src="/images/icons/shape-blob.svg" alt="blob" />
+      </div>
+      <div class="about__content">
+        <h1>Ornare Vukputate Elit</h1>
+        <p>
+          Nullam quis risus eget urna mollis ornara vel eu leo. Fusce dapibus,
+          tellus ac cursus commodo, toror mauris condimentum nibh, ut fetmentum
+          massa justo sit amet risus. Aenean lacinia bibendum nulla des
+          consectetur. Morbi leo risus, porta ac consecteutur ac, vestibulum at
+          eros.
+        </p>
+        <button class="btn">Learn More</button>
+      </div>
+    </section>
+    <!-- Jumbotron Section -->
+    <section class="jumbotron flex-center">
+      <div class="jumbotron__content">
+        <img
+          class="jumbotron__logo"
+          src="./images/icons/shape-paw.svg"
+          alt="paw"
+        />
+        <h1>Spend £40 for Free Delivery!*</h1>
+        <p>
+          Integer posuere erat a ante venetis dapibus posuere velit aliquest.
+        </p>
+      </div>
+    </section>
+    <footer id="footer" class="footer">
+      <h1 class="top-footer__logo">
+        B
+        <img src="./images/icons/shape-paw.svg" alt="paw" />
+        RK
+      </h1>
+      <div class="footer-container">
+        <div class="top-footer">
+          <div class="top-footer__column">
+            <ul>
+              <li><a href="">Consectetur</a></li>
+              <li><a href="">Ullamcoprer</a></li>
+              <li><a href="">Nullam</a></li>
+              <li><a href="">Icepectos</a></li>
+              <li><a href="">Bierdum</a></li>
+            </ul>
+          </div>
+          <div class="top-footer__column">
+            <ul>
+              <li><a href="">Consectetur</a></li>
+              <li><a href="">Ullamcoprer</a></li>
+              <li><a href="">Nullam</a></li>
+              <li><a href="">Icepectos</a></li>
+              <li><a href="">Bierdum</a></li>
+            </ul>
+          </div>
+          <div class="top-footer__info">
+            <div class="top-footer__signup flex-center">
+              <p>Click here to sign up</p>
+              <img src="/images/icons/arrow-forward.svg" alt="" />
+            </div>
+            <div class="top-footer__social">
+              <a href="https://www.facebook.com" target="_blank">
+                <img src="./images/icons/social-fb.svg" alt="facebook"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="./images/icons/social-insta.svg" alt="instangram" />
+              </a>
+              <a href="https://www.twitter.com" target="_blank">
+                <img src="./images/icons/social-tw.svg" alt="twitter" />
+              </a>
+              <a href="https://www.youtube.com" target="_blank">
+                <img src="./images/icons/social-yt.svg" alt="youtube"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <div class="bottom-footer__payicons">
+            <img src="./images/icons/payment-amex.svg" alt="" />
+            <img src="./images/icons/payment-apple.svg" alt="" />
+            <img src="./images/icons/payment-paypal.svg" alt="" />
+            <img src="./images/icons/payment-google.svg" alt="" />
+            <img src="./images/icons/payment-via.svg" alt="" />
+            <img src="./images/icons/payment-klarna.svg" alt="" />
+            <img src="./images/icons/payment-maestro.svg" alt="" />
+            <img src="./images/icons/payment-mastercard.svg" alt="" />
+          </div>
+          <p>© 2019 Bark Ltd. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="main.js"></script>
+  </body>
+</html>
