@@ -36,4 +36,43 @@
   .content h3 {
     width: 280px;
   }
+
+  /*--> PRODUCTS <--*/
+  .product:nth-child(odd) {
+    display: none;
+  }
+
+  .products {
+    height: 470px;
+  }
+
+  .product.middle-product {
+    height: 250px;
+    font-size: 15px;
+    width: auto;
+  }
+
+  .products__title {
+    margin: 70px auto;
+  }
+
+  .products__body {
+    margin-top: 200px;
+  }
+
+  .product.middle-product button {
+    width: 50%;
+    padding: 12px;
+    font-size: 10px;
+  }
+
+  .product img {
+    width: 15rem;
+    position: relative;
+    bottom: 50px;
+  }
+
+  .arrows {
+    display: none;
+  }
 }
