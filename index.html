@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/utilities.css" />
     <link rel="stylesheet" href="/css/modal.css" />
+    <link rel="stylesheet" href="/css/hamburger.css" />
     <link rel="stylesheet" href="/css/mobile.css" />
     <title>Bark Pet Shop</title>
   </head>
@@ -32,26 +33,36 @@
           <button class="btn" id="myBtn">sign up</button>
         </div>
       </div>
+    </header>
 
-      <!-- Modal Popup -->
-      <div id="myModal" class="modal">
-        <div class="modal-container">
-          <span class="close">&times;</span>
-          <div class="modal__left">
-            <img src="/images/png/dog-popup@2x.png" alt="dog-popup" />
-          </div>
-          <div class="modal__right">
-            <h3>Newsletter Sign Up</h3>
-            <form action="">
-              <input type="text" placeholder="Name" />
-              <input type="text" placeholder="Email Address" />
-              <p>Donec id elit non mi parta gravida at eget metus.</p>
-              <button class="btn">Sign Up</button>
-            </form>
-          </div>
+    <!-- Modal Popup -->
+    <div id="myModal" class="modal">
+      <div class="modal-container">
+        <span class="close">&times;</span>
+        <div class="modal__left">
+          <img src="/images/png/dog-popup@2x.png" alt="dog-popup" />
+        </div>
+        <div class="modal__right">
+          <h3>Newsletter Sign Up</h3>
+          <form action="">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email Address" />
+            <p>Donec id elit non mi parta gravida at eget metus.</p>
+            <button class="btn">Sign Up</button>
+          </form>
         </div>
       </div>
-    </header>
+    </div>
+    <!-- Hamburger -->
+    <button class="ham"></button>
+    <nav class="ham__navbar">
+      <ul>
+        <li><a class="menuLink" href="#">Active</a></li>
+        <li><a class="menuLink" href="#">Link One</a></li>
+        <li><a class="menuLink" href="#">Link Two</a></li>
+        <li><a class="menuLink" href="#">Link Three</a></li>
+      </ul>
+    </nav>
     <!-- Products Section -->
     <section class="products">
       <div class="products__title">

@@ -11,6 +11,11 @@ body {
   /* font-family: 'Roboto', sans-serif; */
 }
 
+.ham,
+.ham__navbar {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -58,7 +63,6 @@ img {
   text-align: center;
   padding: 30px;
   color: #fff;
-  z-index: 1;
   width: 100%;
 }
 
@@ -66,6 +70,7 @@ img {
   font-weight: 900;
   letter-spacing: 5px;
   font-family: 'Roboto', sans-serif;
+  z-index: 2;
 }
 
 .navbar__logo img {
