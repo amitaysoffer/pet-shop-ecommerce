@@ -136,7 +136,6 @@ nav li a:hover {
 
 .products h3 {
   text-align: center;
-  margin: 60px auto;
   font-weight: 400;
 }
 
@@ -146,7 +145,8 @@ nav li a:hover {
 }
 
 .products__title {
-  margin: 120px;
+  margin-top: 50px;
+  margin-bottom: 170px;
 }
 
 .products__body .flex-center {
@@ -226,7 +226,7 @@ nav li a:hover {
 .arrow {
   width: 10px;
   position: absolute;
-  bottom: 100px;
+  bottom: 240px;
   cursor: pointer;
 }
 
@@ -403,6 +403,7 @@ nav li a:hover {
   width: 15px;
   position: relative;
   left: 10px;
+  cursor: pointer;
 }
 
 .top-footer__signup p {
