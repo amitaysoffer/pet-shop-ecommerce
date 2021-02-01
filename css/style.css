@@ -236,6 +236,10 @@ nav li a:hover {
   margin-left: 40px;
 }
 
+.pagination {
+  display: none;
+}
+
 /* ABOUT */
 .about {
   margin-top: 50px;

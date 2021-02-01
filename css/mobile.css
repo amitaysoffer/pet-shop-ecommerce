@@ -92,6 +92,7 @@
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
     justify-content: unset;
+    scroll-behavior: smooth;
   }
   .product {
     flex-shrink: 0;
@@ -102,6 +103,28 @@
 
   .product:hover {
     height: 360px;
+  }
+
+  /* Product Pagination */
+  .pagination {
+    display: flex;
+  }
+
+  .pagination a {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #fff;
+    /* padding: 5px; */
+    margin-right: 10px;
+    background: #db6435;
+  }
+
+  .pagination a:active {
+    color: blue;
+  }
+  .pagination a:focus {
+    background: black;
   }
 
   /*--> ABOUT <--*/
