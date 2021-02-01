@@ -129,7 +129,7 @@ nav li a:hover {
   width: 325px;
 }
 
-/*-- Products Section --*/
+/*-- Products --*/
 .products {
   height: 400px;
 }
@@ -149,6 +149,10 @@ nav li a:hover {
   margin: 120px;
 }
 
+.products__body .flex-center {
+  align-items: unset;
+}
+
 .product {
   display: flex;
   flex-direction: column;
@@ -162,6 +166,25 @@ nav li a:hover {
   background: #cbe8f8;
   font-size: 10px;
   letter-spacing: 0.5px;
+}
+
+.product__btn {
+  display: none;
+}
+
+.product:hover .product__btn {
+  background: red;
+  display: inline-block;
+}
+
+.product__btn {
+  width: 65%;
+  font-size: 8px;
+  padding: 10px;
+}
+
+.product:hover {
+  height: 200px;
 }
 
 .products-list {

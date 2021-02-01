@@ -191,6 +191,7 @@
 
   .top-footer__signup img {
     width: 20px;
+    cursor: pointer;
   }
 
   .top-footer__social {
