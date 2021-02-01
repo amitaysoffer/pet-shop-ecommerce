@@ -1,7 +1,7 @@
 @media only screen and (max-width: 500px) {
   .ham {
     display: block;
-    position: fixed;
+    position: absolute;
     /* always keep ham on top of everything */
     z-index: 1000;
     top: 20px;
