@@ -223,7 +223,7 @@
     font-size: 11px;
   }
 
-  .bottom-footer__payicons {
+  .bottom-footer__paysvg {
     display: flex;
     justify-content: space-around;
     width: 80%;

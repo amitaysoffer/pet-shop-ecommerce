@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  max-width: 900px;
   /* font-family: 'Roboto', sans-serif; */
 }
 
@@ -370,7 +371,7 @@ nav li a:hover {
   margin-left: 20px;
 }
 
-.bottom-footer__payicons img {
+.bottom-footer__paysvg img {
   width: 30px;
 }
 
