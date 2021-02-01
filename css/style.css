@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  max-width: 900px;
+  /* max-width: 900px; */
   /* font-family: 'Roboto', sans-serif; */
 }
 
@@ -204,6 +204,7 @@ nav li a:hover {
   width: 10px;
   position: absolute;
   bottom: 100px;
+  cursor: pointer;
 }
 
 .right-arrow {
