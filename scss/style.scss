@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700;900&display=swap');
 
 @import 'config';
-@import 'hamburger';
 
 * {
   margin: 0;
@@ -11,8 +10,6 @@
 
 body {
   font-family: $ff-main;
-  /* max-width: 900px; */
-  /* font-family: 'Roboto', sans-serif; */
 }
 
 .ham,
