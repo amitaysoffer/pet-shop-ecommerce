@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700;900&display=swap');
+
+@import 'config';
+@import 'hamburger';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $ff-main;
+  /* max-width: 900px; */
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+.ham,
+.ham__navbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+input {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+/*--> HERO <--*/
+.hero {
+  height: 500px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, $primary-color, $primary-color);
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  transform: scaleX(3);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 30px;
+  color: #fff;
+  width: 100%;
+
+  .navbar__logo {
+    font-weight: 900;
+    letter-spacing: 5px;
+    font-family: 'Roboto', sans-serif;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .navbar__logo img {
+    width: 25px;
+    margin-right: 3px;
+  }
+}
+
+nav {
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    z-index: 1;
+  }
+
+  li a {
+    padding-bottom: 4px;
+  }
+
+  li a:hover {
+    border-bottom: 2px $secondary-color solid;
+  }
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: auto;
+    text-align: center;
+    margin-bottom: 100px;
+    color: #fff;
+  }
+
+  img {
+    width: auto;
+    height: 400px;
+    margin-right: 1em;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 2em;
+    padding: 0.5em;
+    line-height: 1.6;
+    width: 325px;
+  }
+}
+
+/*-- Products --*/
+.products {
+  height: 400px;
+
+  h3 {
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .products__logo {
+    width: 20px;
+    margin-right: 15px;
+  }
+
+  .products__title {
+    margin-top: 50px;
+    margin-bottom: 125px;
+  }
+}
+
+.products-list {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
+    margin: 10px;
+    width: 25%;
+    height: 200px;
+    background: $primary-color;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+
+    .product__btn {
+      display: none;
+      width: 65%;
+      font-size: 8px;
+      padding: 10px;
+    }
+
+    img {
+      width: 12rem;
+      position: relative;
+      bottom: 30px;
+    }
+
+    &:hover .product__btn {
+      background: $secondary-color;
+      display: inline-block;
+    }
+
+    .product__price {
+      margin-top: 10px;
+      color: $secondary-color;
+      font-weight: 700;
+    }
+  }
+}
+
+.arrow {
+  width: 10px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.right-arrow {
+  right: 0;
+  margin-right: 6%;
+}
+
+.left-arrow {
+  left: 0;
+  margin-left: 6%;
+}
+
+.pagination {
+  display: none;
+}
+
+/* ABOUT */
+.about {
+  margin-top: 50px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.about__img {
+  position: relative;
+
+  img {
+    width: 60%;
+  }
+
+  .blob {
+    position: absolute;
+    z-index: -1;
+    bottom: 115px;
+    left: 45px;
+  }
+
+  &:after {
+    content: '';
+    width: 259px;
+    height: 250px;
+    background: linear-gradient(45deg, $primary-color, $primary-color);
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    position: absolute;
+    top: 38px;
+    right: 84px;
+    z-index: -1;
+  }
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 40%;
+  font-size: 12px;
+
+  button {
+    margin: 0;
+    align-self: auto;
+    color: $light-color;
+  }
+
+  p {
+    margin: 25px auto;
+    font-size: 10px;
+    color: $light-grey;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+/* JUMBOTRON */
+.jumbotron {
+  height: 400px;
+  margin-top: 50px;
+  background-image: url('../images/png/pattern-desktop.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron__content {
+  width: 20%;
+
+  p {
+    font-size: 8px;
+    color: $light-grey;
+  }
+
+  h1 {
+    font-weight: 400;
+    margin: 25px auto;
+  }
+}
+
+.jumbotron__logo {
+  width: 2em;
+}
+
+/* FOOTER */
+.footer {
+  height: 400px;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 2rem 3rem;
+  font-size: 10px;
+  color: $light-grey;
+}
+
+.top-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.top-footer__logo {
+  font-weight: 900;
+  font-size: 1.3em;
+  color: #000;
+  font-size: 2em;
+  letter-spacing: -1px;
+  font-family: 'Roboto', sans-serif;
+
+  img {
+    width: 15px;
+    margin: 0 -2px;
+  }
+
+  &:after {
+    content: '';
+    width: 60%;
+    height: 100px;
+    right: 80px;
+    position: absolute;
+    margin-top: 60px;
+    border-bottom: $light-color 1px solid;
+  }
+}
+
+.top-footer__column {
+  a {
+    color: $light-grey;
+  }
+
+  a:hover {
+    color: #000;
+  }
+
+  li {
+    color: $light-grey;
+    padding: 5px;
+  }
+}
+
+.top-footer__social {
+  margin-top: 10px;
+
+  img {
+    width: 10px;
+    margin-right: 20px;
+  }
+}
+
+.top-footer__signup {
+  img {
+    width: 15px;
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+  }
+
+  p {
+    font-size: 15px;
+    color: $secondary-color;
+  }
+}
+
+.bottom-footer {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 20px;
+
+  .bottom-footer__paysvg img {
+    width: 30px;
+  }
+}
