@@ -1,8 +1,7 @@
 @media only screen and (max-width: 500px) {
   .ham {
     display: block;
-    position: absolute;
-    /* always keep ham on top of everything */
+    position: fixed;
     z-index: 1000;
     top: 20px;
     right: 20px;
@@ -11,7 +10,6 @@
     border: none;
     cursor: pointer;
     background-color: transparent;
-    /* show the menu image */
     background-image: url('https://img.icons8.com/ios-filled/50/fa314a/menu--v1.png');
     background-size: 100%;
   }
@@ -30,9 +28,7 @@
     overflow: hidden;
     color: white;
     z-index: 1;
-    /* hide the menu above the screen by default */
     transform: translateY(-100%);
-    /* transition adds a little animation when sliding in and out the menu */
     transition: transform 0.2s ease;
   }
 
@@ -68,7 +64,6 @@
   }
 
   .showNav {
-    /* show the menu */
     transform: translateY(0);
   }
 }
