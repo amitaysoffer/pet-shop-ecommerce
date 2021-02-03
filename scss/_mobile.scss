@@ -13,28 +13,28 @@
   }
   .content-container {
     flex-direction: column-reverse;
-  }
 
-  .content-container .content {
-    height: 85px;
-  }
-  .content-container img {
-    height: 300px;
-    margin: 0;
-    -ms-transform: rotate(20deg);
-    transform: skewY(-10deg);
-    position: relative;
-    left: 80px;
-  }
+    .content {
+      height: 85px;
+    }
+    img {
+      height: 300px;
+      margin: 0;
+      -ms-transform: rotate(20deg);
+      transform: skewY(-10deg);
+      position: relative;
+      left: 80px;
+    }
 
-  .content {
-    height: auto;
-    margin-bottom: 30px;
-    font-size: 12px;
-  }
+    .content {
+      height: auto;
+      margin-bottom: 30px;
+      font-size: 12px;
 
-  .content h3 {
-    width: 280px;
+      h3 {
+        width: 280px;
+      }
+    }
   }
 
   /*--> PRODUCTS <--*/
@@ -66,18 +66,18 @@
     width: 100%;
     height: 360px;
     font-size: 1em;
+
+    img {
+      width: 15rem;
+      position: relative;
+      bottom: 50px;
+    }
   }
 
   .products-list .product .product__btn {
     display: inline-block;
     width: 55%;
     padding: 14px;
-  }
-
-  .product img {
-    width: 15rem;
-    position: relative;
-    bottom: 50px;
   }
 
   .arrow {
@@ -99,12 +99,12 @@
     width: 100%;
     font-size: 15px;
     height: 335px;
-  }
 
-  .products-list .product img {
-    width: 15rem;
-    position: relative;
-    bottom: 34px;
+    img {
+      width: 15rem;
+      position: relative;
+      bottom: 34px;
+    }
   }
 
   .products-list > div {
@@ -118,22 +118,22 @@
   /* Product Pagination */
   .pagination {
     display: flex;
-  }
 
-  .pagination a {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    color: #fff;
-    margin-right: 10px;
-    background: #db6435;
-  }
+    a {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      color: #fff;
+      margin-right: 10px;
+      background: #db6435;
+    }
 
-  .pagination a:active {
-    color: blue;
-  }
-  .pagination a:focus {
-    background: black;
+    a:active {
+      color: blue;
+    }
+    a:focus {
+      background: black;
+    }
   }
 
   /*--> ABOUT <--*/
@@ -148,36 +148,38 @@
     text-align: center;
     margin-top: 40px;
     width: 90%;
+
+    button {
+      margin: auto;
+      width: 55%;
+      padding: 13px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    h1 {
+      margin: auto;
+    }
   }
 
-  .about__content button {
-    margin: auto;
-    width: 55%;
-    padding: 13px;
-  }
+  .about__img {
+    img {
+      width: 61%;
+    }
 
-  .about__content p {
-    font-size: 12px;
-  }
+    .blob {
+      bottom: 99px;
+      left: 32px;
+    }
 
-  .about__content h1 {
-    margin: auto;
-  }
-
-  .about__img img {
-    width: 61%;
-  }
-
-  .about__img .blob {
-    bottom: 99px;
-    left: 32px;
-  }
-
-  .about__img:after {
-    top: 38px;
-    right: 69px;
-    width: 248px;
-    height: 220px;
+    &:after {
+      top: 38px;
+      right: 69px;
+      width: 248px;
+      height: 220px;
+    }
   }
 
   /*--> JUMBOTRON <--*/
@@ -188,19 +190,19 @@
 
   .jumbotron__content {
     width: 50%;
+
+    h1 {
+      margin: 14px;
+      font-size: 21px;
+    }
+
+    p {
+      font-size: 11px;
+    }
   }
 
   .jumbotron__logo {
     width: 1.3em;
-  }
-
-  .jumbotron__content h1 {
-    margin: 14px;
-    font-size: 21px;
-  }
-
-  .jumbotron__content p {
-    font-size: 11px;
   }
 
   /*--> FOOTER <--*/
@@ -214,21 +216,28 @@
   .top-footer__logo {
     margin-bottom: 30px;
     font-size: 3em;
-  }
 
-  .top-footer__logo img {
-    width: 27px;
-    position: relative;
-    top: 1px;
-    left: 1px;
-    margin: 0 -5px;
+    img {
+      width: 27px;
+      position: relative;
+      top: 1px;
+      left: 1px;
+      margin: 0 -5px;
+    }
+
+    &:after {
+      content: '';
+      width: 70%;
+      height: 100px;
+      right: 78px;
+      position: absolute;
+      margin-top: 250px;
+      border-bottom: #f4f4f4 2px solid;
+    }
   }
 
   .top-footer {
     display: grid;
-  }
-
-  .top-footer {
     font-size: 12px;
     justify-content: unset;
   }
@@ -248,46 +257,36 @@
     margin-bottom: 35px;
   }
 
-  .top-footer__signup p {
-    font-size: 18px;
-  }
+  .top-footer__signup {
+    justify-content: unset;
 
-  .top-footer__signup img {
-    width: 20px;
-    cursor: pointer;
+    p {
+      font-size: 18px;
+    }
+
+    img {
+      width: 20px;
+      cursor: pointer;
+    }
   }
 
   .top-footer__social {
     margin-top: 25px;
-  }
 
-  .top-footer__social img {
-    width: 15px !important;
-  }
-
-  .top-footer__signup {
-    justify-content: unset;
-  }
-
-  .top-footer__logo:after {
-    content: '';
-    width: 70%;
-    height: 100px;
-    right: 78px;
-    position: absolute;
-    margin-top: 250px;
-    border-bottom: #f4f4f4 2px solid;
+    img {
+      width: 15px !important;
+    }
   }
 
   .bottom-footer {
     margin-top: 60px;
     margin-bottom: 30px;
     display: block;
-  }
 
-  .botton-footer p {
-    margin-top: 10px;
-    font-size: 11px;
+    p {
+      margin-top: 10px;
+      font-size: 11px;
+    }
   }
 
   .bottom-footer__paysvg {
@@ -309,39 +308,39 @@
   .modal__left {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-  }
 
-  .modal__left img {
-    height: 160px;
+    img {
+      height: 160px;
+    }
   }
 
   .modal__right {
     justify-content: flex-start;
-  }
 
-  .modal__right h3 {
-    margin-top: 25px;
-    font-size: 20px;
-  }
+    h3 {
+      margin-top: 25px;
+      font-size: 20px;
+    }
 
-  .modal__right input {
-    padding: 15px 25px;
-    background: #cbe8f8;
-    border: none;
-    border-radius: 20px;
-    margin-bottom: 15px;
-    outline: none;
-    width: 80%;
-  }
+    input {
+      padding: 15px 25px;
+      background: #cbe8f8;
+      border: none;
+      border-radius: 20px;
+      margin-bottom: 15px;
+      outline: none;
+      width: 80%;
+    }
 
-  .modal__right button {
-    padding: 15px;
-    width: 50%;
-  }
+    button {
+      padding: 15px;
+      width: 50%;
+    }
 
-  .modal__right p {
-    font-size: 12px;
-    width: 70%;
-    margin: auto;
+    p {
+      font-size: 12px;
+      width: 70%;
+      margin: auto;
+    }
   }
 }
